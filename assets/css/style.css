@@ -1,0 +1,363 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    background: #040026;
+    background: linear-gradient(90deg, rgba(4, 0, 38, 1) 18%, rgba(60, 47, 145, 1) 67%, rgba(102, 0, 255, 1) 100%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pai {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh 7vw;
+}
+
+.filho {
+    align-items: center;
+    flex-direction: column;
+    margin-right: 500px;
+}
+
+.perfil {
+    width: 200px;
+    border-radius: 100%;
+}
+
+h1 {
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    font-size: 75px;
+}
+
+h3 {
+    align-items: center;
+    margin-left: 250px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 220px;
+    font-size: 26px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 1vh;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#Inicio {
+    padding: 4vh 7vw;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+#Sobre h2 {
+    color: white;
+    font-size: 35px;
+    padding-bottom: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+h2 {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    background-color: #38008b;
+    margin-bottom: 40px;
+    padding: 6px;
+}
+
+#Inicio img {
+    width: 300px;
+    border: 6px solid #040026;
+    border-radius: 7px;
+}
+#Inicio p{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#projetospai h2{
+    gap: 10px;
+}
+
+#projetospai {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.projetosfilho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 350px;
+    margin-bottom: 40px;
+    gap: 150px;
+}
+
+.tplog img {
+    height: 323px;
+    width: 525px;
+    border: 6px solid #040026;
+}
+
+.tplog p {
+    text-align: center;
+    font-size: 25px;
+    border: 6px solid #040026;
+}
+
+.Shopee p {
+    text-align: center;
+    font-size: 25px;
+    border: 6px solid #040026;
+}
+
+.projetosfilho {
+    height: 364px;
+    width: 520px;
+    display: flex;
+}
+
+.projetosfilho img {
+    border: 6px solid #040026;
+    justify-content: center;
+}
+
+#contato {
+    align-items: center;
+    padding-bottom: 45px;
+}
+
+form {
+    align-items: center;
+    margin-left: 730px;
+    display: flex;
+    flex-direction: column;
+    max-width: 20rem;
+    background-color: #e2e2e2;
+    padding: 4rem;
+    box-shadow: 0 0 1rem rgba(99, 98, 98, 0.15);
+    border-radius: 10px;
+    border: 4px solid #040026;
+}
+
+form input {
+    border: 0;
+    background-color: #fff;
+    width: 270px;
+    padding: 10px;
+    outline: none;
+    padding-bottom: 2vh;
+}
+input:focus{
+    box-shadow:  0px 0px 4px #000;
+}
+
+form label {
+    margin-right: 200px;
+    font-size: 20px;
+}
+
+form button{
+    color: white;
+    margin-top: 10px;
+    padding: 1vh;
+    width: 100px;
+    background-color: #383838;
+    font-size: 4px white;
+}
+
+footer {
+    align-items: center;
+    background: #6600FF;
+    background: linear-gradient(90deg, rgba(102, 0, 255, 1) 0%, rgba(60, 47, 145, 1) 33%, rgba(4, 0, 38, 1) 67%);
+    padding: 3vh;
+}
+
+footer p {    
+    font-size: 35px;
+    margin-left: 75px;
+    color: white;
+}
+
+/* RESPONSIVIDADE GERAL */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 55px;
+  }
+
+  ul {
+    gap: 50px;
+    font-size: 22px;
+    flex-wrap: wrap;
+  }
+
+  .pai {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .filho {
+    margin-right: 0;
+    align-items: center;
+  }
+}
+
+/* TABLET E CELULARES GRANDES */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 42px;
+    text-align: center;
+  }
+
+  h3 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  ul {
+    flex-direction: column;
+    gap: 15px;
+    font-size: 20px;
+    padding: 2vh;
+  }
+
+  #Inicio {
+    flex-direction: column;
+    gap: 30px;
+    padding: 4vh 5vw;
+  }
+
+  #Inicio img {
+    width: 90%;
+  }
+
+  #Inicio p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  /* PROJETOS */
+  #projetospai {
+    align-items: center;
+  }
+
+  .projetosfilho {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    gap: 30px;
+    width: 90%;
+    margin-bottom: 40px;
+  }
+
+  .tplog img,
+  .Shopee img {
+    width: 100%;
+    height: auto;
+  }
+
+  .tplog p,
+  .Shopee p {
+    font-size: 18px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  /* FORMULÁRIO DE CONTATO */
+  #contato {
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  form {
+    margin: 0;
+    width: 90%;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+
+  form label {
+    margin-right: 0;
+    align-self: flex-start;
+    font-size: 16px;
+  }
+
+  form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+  }
+
+  form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  footer p {
+    font-size: 20px;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+/* CELULARES PEQUENOS */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  #Inicio p {
+    font-size: 16px;
+  }
+
+  ul {
+    font-size: 16px;
+  }
+
+  .tplog p,
+  .Shopee p {
+    font-size: 16px;
+  }
+
+  footer p {
+    font-size: 16px;
+  }
+
+  form {
+    padding: 1.5rem;
+  }
+
+  form label {
+    font-size: 14px;
+  }
+
+  form button {
+    font-size: 14px;
+  }
+}
